@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLTI - Soluções Inteligentes em Tecnologia</title>
+  <meta name="description" content="LLTI - Suporte em TI, Redes, Software e Consultoria. Soluções inteligentes em tecnologia em São Paulo e regiões.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a3cff, #0b7bff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0a3cff;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0a3cff;
+    }
+
+    .sobre p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #0a3cff;
+      margin-bottom: 10px;
+    }
+
+    .contato {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contato p {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #0a3cff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #062dbf;
+    }
+
+    footer {
+      background: #0a3cff;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LLTI</h1>
+    <p>Soluções Inteligentes em Tecnologia</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre a LLTI</h2>
+    <p>
+      A LLTI é especializada em soluções completas de tecnologia da informação,
+      oferecendo suporte, infraestrutura, redes, software e consultoria.
+      Atuamos com foco em eficiência, segurança e inovação para impulsionar
+      o crescimento dos nossos clientes.
+    </p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+
+    <div class="servicos">
+      <div class="card">
+        <h3>Infraestrutura</h3>
+        <p>Implantação e gerenciamento de servidores, redes e ambientes corporativos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Suporte em TI</h3>
+        <p>Atendimento técnico especializado para garantir estabilidade e produtividade.</p>
+      </div>
+
+      <div class="card">
+        <h3>Consultoria</h3>
+        <p>Análise estratégica para modernização e otimização dos recursos tecnológicos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Instalação de Softwares</h3>
+        <p>Configuração e licenciamento de sistemas conforme a necessidade do cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+
+    <div class="contato">
+      <p><strong>Atendimento:</strong> São Paulo Capital e Demais Regiões</p>
+      <p><strong>Telefone / WhatsApp:</strong> (11) 9.4722-5696</p>
+
+      <a class="btn" href="https://wa.me/5511947225696" target="_blank">
+        Falar pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 LLTI - Soluções Inteligentes em Tecnologia</p>
+  </footer>
+
+</body>
+</html>
